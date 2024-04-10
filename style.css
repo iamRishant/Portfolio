@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    /* color: #fff; */
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height: 10%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.868);
+    /* background-color: transparent; */
+    color: white;
+}
+.nav-left{
+    display: flex;
+    gap: 30px;
+}
+#logo{
+    font-size: 3rem;
+}
+#page1{
+    /* border: 5px solid black; */
+    height: 90%;
+    width: 100%;
+    display: flex;
+    /* background: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    /* object-fit:fill; */
+    background: url('bg.jpg');
+    background-size:cover;
+}
+#left{
+    /* border: 2px solid green; */
+    width: 50%;
+    height: 100%;
+    padding-left: 6%;
+    padding-top: 12%;
+    overflow: hidden;
+}
+#left h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+
+}
+#left p{
+    margin-top: 5%;
+    width: 80%;
+}
+#right{
+    /* border: 2px solid rgb(17, 0, 128); */
+    width: 50%;
+    height: 100%;
+    padding-left: 6%;
+    padding-top: 6%;
+}
+canvas{
+    /* border: 2px solid black; */
+}
+#canvas1{
+    height: 70%;
+    width: 40%;
+    margin-right: 5%;
+}
+#canvas2{
+    height: 50%;
+    width: 40%;
+}
+
+.textr{
+    height: 10%;
+    width: 76%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 1% 4% 12%;
+    /* display: ; */
+}
+/* left part */
+
+.container{
+    overflow: hidden;
+}
+.text{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+}
+.text_2{
+    color: green;
+}
+.text.text_2::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EEEEEE;
+    /* background-color: black; */
+    border-left: 2px solid black;
+    animation: movee 4s steps(250) infinite;
+    
+}
+@keyframes movee{
+    40%,60%{
+        left: calc(100% + 5px);
+    }
+    100%{
+        left: 0;
+    }
+}
+.active{
+    color: #76ABAE;
+}
+a{
+    transition: ease-out 0.3s;
+}
+a:hover{
+    color: #76ABAE;
+}
+p{
+    font-size: 1.2rem;
+}
+
+/* --------------For Project Page */
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.p1{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #76ABAE;
+}
+.p2{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 50%;
+}
+.p1 h2{
+    padding-top: 6%;
+    width: 50%;
+    font-size: 2.5rem;
+}
+.p1 p{
+    margin-top: 1%;
+    width: 80%;
+    font-size: 1.2vw;
+}
+video{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    /* border: 5px solid yellow; */
+    object-fit:contain
+    /* object-position: ; */
+    /* position: fixed; */
+}
+.box a{
+    color: black;
+    font-weight: 500;
+    
+}
+.box a:hover{
+    color: white;
+}
+/* about style */
+#ap1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 6%; */
+    padding-top: 6%;
+    height: 90%;
+    width: 100%;
+    /* background-color: #BED7DC; */
+    background-color: black;
+    color: black;
+
+}
+.img{
+    background:url("https://images.unsplash.com/photo-1462332420958-a05d1e002413?q=80&w=1807&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size:contain;
+    /* for better photo experience we do backgroud size cover but here i need contain */
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+}
+.img h1{
+    font-size: 8rem;
+    color: transparent;
+    font-weight: 700;
+}
+#ap1 p{
+    /* border:2px solid green; */
+    color: white;
+    width: 60%;
+    margin-top: 1%;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+}

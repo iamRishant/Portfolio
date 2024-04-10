@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    
+</head>
+<body>
+    <nav id="nabar">
+        <a href="index.html">
+            <h1 id="logo" class="gsap1">Rishant</h1>
+        </a>
+        <div class="nav-left">
+            <a href="index.html" class=""><h1 class="gsap1">Home</h1></a>
+            <a href="about.html"><h1 class="gsap1">About</h1></a>
+            <a href="project.html"><h1 class="gsap1">Projects</h1></a>
+            <a href="contact.html" class="active"><h1 class="gsap1">Contact</h1></a>
+        </div>
+    </nav>
+    <div id="main" class="gsap2">
+        
+        <h1>Get In Touch</h1>
+        <form target="_blank" action="https://formsubmit.co/kiturana378@gmail.com" method="POST">
+            <div class="first">
+               
+                    <div class="name boc">
+                        <input type="text" placeholder="Full Name" required name="name">
+                    </div>
+                
+
+                
+                    <div class="email boc">
+                        <input type="email" placeholder="Email" required name="email">
+                    </div>
+
+                
+            </div>
+            <div class="second">
+
+                    <div class="number boc">
+                        <input type="number" placeholder="Phone Number(optional)" name="phone" >
+                    </div>
+
+                    <div class="subject boc" >
+                        <input type="text" placeholder="Subject" name="subject" required>
+                    </div>
+            </div>
+            <div class="third boc">
+                    <textarea cols="30" rows="10" placeholder="Enter Your Message" name="message"></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+            <!-- to avoid captcha -->
+            <!-- <input type="hidden" name="_captcha" value="false"> -->
+            <!-- to send it to desired webpage -->
+            <input type="hidden" name="_next" value="https://contact-rishant.netlify.app/thankyou.html/">
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script> -->
+    <script src="contact.js"></script>
+</body>
+</html>
