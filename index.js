@@ -99,7 +99,8 @@ tl.from(".gsap4",{
 
 // responsiveness burger icon
 let burger=document.querySelector(".burger");
-
 burger.addEventListener("click",()=>{
-    // console.log("clicked");
+    burger.classList.toggle("active");
+    let navLeft=document.querySelector(".nav-left");
+    navLeft.classList.toggle("chota_screen");
 })

@@ -16,3 +16,9 @@ tl.from(".gsap2",{
     duration:0.5,
     // opacity:0,
 })
+let burger=document.querySelector(".burger");
+burger.addEventListener("click",()=>{
+    burger.classList.toggle("active");
+    let navLeft=document.querySelector(".nav-left");
+    navLeft.classList.toggle("chota_screen");
+})

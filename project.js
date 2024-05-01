@@ -22,4 +22,11 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
-  console.log(window.innerWidth);
+  // console.log(window.innerWidth);
+
+  let burger=document.querySelector(".burger");
+burger.addEventListener("click",()=>{
+    burger.classList.toggle("active");
+    let navLeft=document.querySelector(".nav-left");
+    navLeft.classList.toggle("chota_screen");
+})
