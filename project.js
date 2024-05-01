@@ -9,6 +9,9 @@ tl.from(".gsap1",{
     opacity:0,
 })
 
+// let slides;
+// if(window.innerWidth<=600) slides=3;
+// else slides=2;
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 2,
@@ -19,3 +22,4 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+  console.log(window.innerWidth);

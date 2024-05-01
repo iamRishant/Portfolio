@@ -30,6 +30,10 @@ nav{
     /* background-color: transparent; */
     color: white;
 }
+.burger{
+    display: none;
+    
+}
 .nav-left{
     display: flex;
     gap: 30px;
@@ -46,6 +50,7 @@ nav{
     /* object-fit:fill; */
     background: url('bg.jpg');
     background-size:cover;
+    /* background-size:contain; */
 }
 #left{
     /* border: 2px solid green; */
@@ -212,16 +217,105 @@ video{
     
 }
 .img h1{
-    font-size: 8rem;
+    font-size: 18vmin;
     color: transparent;
     font-weight: 700;
 }
 #ap1 p{
     /* border:2px solid green; */
     color: white;
-    width: 60%;
+    width: 70%;
     margin-top: 1%;
-    font-size: 1.5rem;
-    line-height: 40px;
-    text-align: center;
+    font-size: 4.5vmin;
+    line-height:5vmin;
+    text-align:justify;
 }
+#ap2{
+    height: 90vh;
+    width: 100vw;
+}
+
+
+/* responsive  */
+
+@media only screen and (max-width: 600px) {
+    #page1{
+        display: inline-block;
+        min-width: 100vw;
+        overflow-y: hidden;
+        /* text-align: center; */
+    }
+    #logo{
+        font-size: 8vmin;
+    }
+    nav{
+        padding-left: 5vmin;
+    }
+    
+    .nav-left{
+        display: none;
+    }
+    #left {
+      /* min-width: 100%; */
+      width: 100vw;
+      height: 54vh;
+
+      
+    }
+    #right{
+        width: 100vw;
+        height: 45vh;
+    }
+    #page1 h1{
+        font-size: 8vmin;
+        /* padding-left: 5vmin; */
+        line-height: 10vmin;
+    }
+    #page1 span{
+        font-size: 8vmin;
+    }
+    #page1 p{
+        font-size: 4vmin;
+        /* text-align: center; */
+        text-align: justify;
+        /* text-align: left; */
+        /* padding-left: 5vmin; */
+        width: 80vw;
+    }
+    .textr{ 
+        width: 85vw;
+    }
+    #canvas1{
+        height: 20vh;
+    }
+    #canvas2{
+        height: 20vh;
+    }
+    .burger{
+        display: block;
+        padding-right: 3vmin;
+        font-size: 1.7rem;
+    }
+    /* about */
+    #ap1{
+        padding-top: 15vmin;
+    }
+    /* project */
+    .p1 h2{
+        font-size: 5vmin;
+        
+    }
+    .p1 p{
+        font-size: 3vmin;
+        text-align: left;
+    }
+
+    /* contact */
+    form input{
+        font-size: 2.3vmin;
+        width: 100%;
+        height: 90%;
+        /* overflow: hidden; */
+        margin-top: 0;
+    }
+  }

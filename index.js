@@ -95,3 +95,11 @@ tl.from(".gsap4",{
     duration:1,
     opacity:0,
 })
+
+
+// responsiveness burger icon
+let burger=document.querySelector(".burger");
+
+burger.addEventListener("click",()=>{
+    // console.log("clicked");
+})
