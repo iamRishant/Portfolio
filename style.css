@@ -236,6 +236,10 @@ video{
     width: 100vw;
 }
 
+.footer a{
+   font-size: 5vh;
+}
+
 
 /* responsive  */
 
